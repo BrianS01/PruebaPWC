@@ -1,0 +1,43 @@
+﻿@page
+@model _220529PruebaTecnica.Pages.Clientes.IndexModel
+@{
+    ViewData["Title"] = "Clientes";
+}
+
+<br>
+<h2>Listado de Clientes</h2>
+<a class='btn btn-primary btn-sm' href='/Clientes/Crear'>Agregar Cliente</a>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Cedula</th>
+            <th>Nombres</th>
+            <th>Apellidos</th>
+            <th>Telefono</th>
+            <th>Correo</th>
+            <th>Departamento</th>
+            <th>Ciudad</th>
+            <th>Edad</th>
+            <th>Opciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var item in Model.listaClientes)
+        {
+            <tr>
+                <td>@item.cedula</td>
+                <td>@item.nombres</td>
+                <td>@item.apellidos</td>
+                <td>@item.telefono</td>
+                <td>@item.correo</td>
+                <td>@item.departamento</td>
+                <td>@item.ciudad</td>
+                <td>@item.edad</td>
+                <td>
+                    <a class="btn btn-primary btn-sm" href="/Clientes/Editar?id=@item.id">Editar</a> 
+                    <a class="btn btn-danger btn-sm" href="/Clientes/Borrar?id=@item.id">Borrar</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

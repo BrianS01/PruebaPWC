@@ -1,0 +1,39 @@
+﻿@page
+@model _220529PruebaTecnica.Pages.Reservas.IndexModel
+@{
+    ViewData["Title"] = "Reservas";
+}
+
+<br>
+<h2>Listado de Reservas</h2>
+<a class='btn btn-primary btn-sm' href='/Reservas/Crear'>Crear Reserva</a>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Cliente</th>
+            <th>Fecha</th>
+            <th>Cantidad de Personas</th>
+            <th>Motivo</th>
+            <th>Observaciones</th>
+            <th>Estado</th>
+            <th>Opciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var item in Model.listaReservas)
+        {
+            <tr>
+                <td>@item.cliente</td>
+                <td>@item.fecha</td>
+                <td>@item.cantidad</td>
+                <td>@item.motivo</td>
+                <td>@item.observaciones</td>
+                <td>@item.estado</td>
+                <td>
+                    <a class="btn btn-primary btn-sm" href="/Reservas/Editar?id=@item.id">Editar</a> 
+                    <a class="btn btn-danger btn-sm" href="/Reservas/Borrar?id=@item.id">Borrar</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
