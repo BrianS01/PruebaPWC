@@ -32,7 +32,9 @@ namespace _220529PruebaTecnica.Pages.Reservas
             //save the new client into the database
             try
             {
-                String connectionString = "Data Source=.\\SQLEXPRESS;Initial Catalog=Salones;Integrated Security=True";
+                //String connectionString = "Data Source=.\\SQLEXPRESS;Initial Catalog=Salones;Integrated Security=True";
+                String connectionString = "Data Source=Salones.mssql.somee.com;Initial Catalog=Salones;user id=BrianS01_SQLLogin_1; pwd=itxrwj512x";
+
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {
                     connection.Open();

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\frederick\\Documents\\2022\\Job Offers\\Outsourcing\\220529PruebaTecnica\\220529PruebaTecnica.csproj": {}
+    "C:\\Users\\frederick\\Documents\\GitHub\\PruebaPWC\\220529PruebaTecnica.csproj": {}
   },
   "projects": {
-    "C:\\Users\\frederick\\Documents\\2022\\Job Offers\\Outsourcing\\220529PruebaTecnica\\220529PruebaTecnica.csproj": {
+    "C:\\Users\\frederick\\Documents\\GitHub\\PruebaPWC\\220529PruebaTecnica.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\frederick\\Documents\\2022\\Job Offers\\Outsourcing\\220529PruebaTecnica\\220529PruebaTecnica.csproj",
+        "projectUniqueName": "C:\\Users\\frederick\\Documents\\GitHub\\PruebaPWC\\220529PruebaTecnica.csproj",
         "projectName": "220529PruebaTecnica",
-        "projectPath": "C:\\Users\\frederick\\Documents\\2022\\Job Offers\\Outsourcing\\220529PruebaTecnica\\220529PruebaTecnica.csproj",
+        "projectPath": "C:\\Users\\frederick\\Documents\\GitHub\\PruebaPWC\\220529PruebaTecnica.csproj",
         "packagesPath": "C:\\Users\\frederick\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\frederick\\Documents\\2022\\Job Offers\\Outsourcing\\220529PruebaTecnica\\obj\\",
+        "outputPath": "C:\\Users\\frederick\\Documents\\GitHub\\PruebaPWC\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\frederick\\AppData\\Roaming\\NuGet\\NuGet.Config",

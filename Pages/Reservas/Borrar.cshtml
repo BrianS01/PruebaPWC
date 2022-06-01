@@ -6,7 +6,9 @@
     {
         String id = Request.Query["id"];
 
-        string connectionString = "Data Source=.\\SQLEXPRESS;Initial Catalog=Salones;Integrated Security=True";
+        //string connectionString = "Data Source=.\\SQLEXPRESS;Initial Catalog=Salones;Integrated Security=True";
+        String connectionString = "Data Source=Salones.mssql.somee.com;Initial Catalog=Salones;user id=BrianS01_SQLLogin_1; pwd=itxrwj512x";
+
         using (SqlConnection connection = new SqlConnection(connectionString))
         {
             connection.Open();
